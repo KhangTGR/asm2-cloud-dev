@@ -1,0 +1,57 @@
+{
+    "Comment": "State Machine to handle AUD Exchange based on currency",
+    "StartAt": "CheckCurrency",
+    "States": {
+        "CheckCurrency": {
+            "Type": "Choice",
+            "Choices": [
+                {
+                    "Variable": "$.currency",
+                    "StringEquals": "USD",
+                    "Next": "USDHandler"
+                },
+                {
+                    "Variable": "$.currency",
+                    "StringEquals": "GBP",
+                    "Next": "GBPHandler"
+                },
+                {
+                    "Variable": "$.currency",
+                    "StringEquals": "NZD",
+                    "Next": "NZDHandler"
+                },
+                {
+                    "Variable": "$.currency",
+                    "StringEquals": "EUR",
+                    "Next": "EURHandler"
+                }
+            ],
+            "Default": "InvalidInput"
+        },
+        "USDHandler": {
+            "Type": "Task",
+            "Resource": "arn:aws:lambda:us-east-1:338084275222:function:s3929994-AUDExchange",
+            "End": true
+        },
+        "GBPHandler": {
+            "Type": "Task",
+            "Resource": "arn:aws:lambda:us-east-1:338084275222:function:s3929994-AUDExchange",
+            "End": true
+        },
+        "NZDHandler": {
+            "Type": "Task",
+            "Resource": "arn:aws:lambda:us-east-1:338084275222:function:s3929994-AUDExchange",
+            "End": true
+        },
+        "EURHandler": {
+            "Type": "Task",
+            "Resource": "arn:aws:lambda:us-east-1:338084275222:function:s3929994-AUDExchange",
+            "End": true
+        },
+        "InvalidInput": {
+            "Type": "Fail",
+            "Error": "InvalidInputError",
+            "Cause": "Invalid input supplied"
+        }
+    }
+}

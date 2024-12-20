@@ -1,0 +1,51 @@
+[
+    {
+        "course_name": "Cloud Developing",
+        "student_id": 1000002,
+        "student_email": "s1000002@cloudexpert.edu.au",
+        "student_name": "Dana Young",
+        "course_year": 2024
+    },
+    {
+        "course_name": "Cloud Developing",
+        "student_id": 1000003,
+        "student_email": "s1000003@cloudexpert.edu.au",
+        "student_name": "Paul Rich",
+        "course_year": 2024
+    },
+    {
+        "course_name": "Cloud Developing",
+        "student_id": 1000004,
+        "student_email": "s1000004@cloudexpert.edu.au",
+        "student_name": "Helen Pan",
+        "course_year": 2023
+    },
+    {
+        "course_name": "Cloud Foundations",
+        "student_id": 1000001,
+        "student_email": "s1000001@cloudexpert.edu.au",
+        "student_name": "John Doe",
+        "course_year": 2023
+    },
+    {
+        "course_name": "Cloud Foundations",
+        "student_id": 1000002,
+        "student_email": "s1000002@cloudexpert.edu.au",
+        "student_name": "Dana Young",
+        "course_year": 2023
+    },
+    {
+        "course_name": "Cloud Foundations",
+        "student_id": 1000003,
+        "student_email": "s1000003@cloudexpert.edu.au",
+        "student_name": "Paul Rich",
+        "course_year": 2022
+    },
+    {
+        "course_name": "Cloud Foundations",
+        "student_id": 1000004,
+        "student_email": "s1000004@cloudexpert.edu.au",
+        "student_name": "Helen Pan",
+        "course_year": 2022
+    }
+]
